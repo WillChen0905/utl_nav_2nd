@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="base_footprint2base_link" args="0 0 0.065 0 0 0 /base_footprint /base_link 10"/>
+    <node pkg="tf" type="static_transform_publisher" name="base_link2laser_link1" args="0.58 -0.37 0.14 -1.12 0 0 /base_link /laser1 10"/>
+    <node pkg="tf" type="static_transform_publisher" name="base_link2laser_link2" args="-0.53 0.27 0.14 2.08 0 0 /base_link /laser2 10"/>
+    <node pkg="tf" type="static_transform_publisher" name="base_link2imu" args="0.1402 0 0.07072 0 0 0 /base_link /IMU_link 10"/>
+</launch>
