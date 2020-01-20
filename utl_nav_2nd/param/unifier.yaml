@@ -1,4 +1,0 @@
-loop_rate: 100
-input_scans:
-  - scan_front
-  - scan_back
