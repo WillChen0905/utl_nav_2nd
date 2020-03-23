@@ -1,0 +1,3 @@
+<launch>
+  <node name="uart" pkg="uart_2nd" type="uart_2nd" output="screen" />
+</launch>

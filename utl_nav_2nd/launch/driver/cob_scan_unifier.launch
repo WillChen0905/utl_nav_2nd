@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- parameters >
+	<rosparam command="load" ns="scan_unifier_node" file="$(find utl_nav_2nd)/param/unifier.yaml"/-->
+	<!-- start node -->
+	<node pkg="cob_scan_unifier" type="scan_unifier_node" name="scan_unifier_node" respawn="false" output="screen" >
+	  <rosparam param="input_scans">[scan_front, scan_back]</rosparam>
+	  <param name="loop_rate" type="double" value="500"/>
+          <remap from="scan_unified" to="scan" />    
+	</node>
+</launch>

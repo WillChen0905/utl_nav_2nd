@@ -1,0 +1,31 @@
+local_costmap:
+    footprint: [[0.505, 0.3], [-0.505, 0.3], [-0.505, -0.3], [0.505, -0.3]]
+    footprint_padding: 0.05
+    transform_tolerance: 1.0
+    update_frequency: 3
+    publish_frequency: 2
+
+    global_frame: map
+    robot_base_frame: base_link
+    static_map: true
+    rolling_window: true
+
+    width: 5
+    height: 5
+    resolution: 0.04
+
+    plugins:           
+        - {name: obstacles,        type: "costmap_2d::ObstacleLayer"}
+        - {name: inflation,        type: "costmap_2d::InflationLayer"}
+
+    obstacles:
+        observation_sources: scan_front scan_back
+        scan_front: {sensor_frame: laser1, data_type: LaserScan, topic: scan_front, marking: true, 
+               clearing: true, inf_is_valid: true}
+        scan_back: {sensor_frame: laser2, data_type: LaserScan, topic: scan_back, marking: true, 
+               clearing: true, inf_is_valid: true}
+    inflation:
+        inflation_radius: 0.15
+        cost_scaling_factor: 6.0
+
+  
