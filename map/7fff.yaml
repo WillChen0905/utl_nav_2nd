@@ -1,0 +1,7 @@
+image: /home/will/catkin_ws/src/utl_nav_2nd/map/7fff.pgm
+resolution: 0.050000
+origin: [-13.448666, -6.170605, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+
