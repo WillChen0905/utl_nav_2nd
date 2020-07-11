@@ -1,3 +1,5 @@
+<?xml version="1.0"?>
+
 <launch>
     <node pkg="rf2o_laser_odometry" type="rf2o_laser_odometry_node" name="rf2o_laser_odometry">
         <param name="laser_scan_topic" value="cob_scan_unifier/scan_unified"/>

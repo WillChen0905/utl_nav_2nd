@@ -5,5 +5,5 @@
     <include file="$(find utl_nav_2nd)/launch/driver/uart.launch" />
     <include file="$(find utl_nav_2nd)/launch/driver/lidar.launch" />
     <include file="$(find utl_nav_2nd)/launch/driver/cob_scan_unifier.launch" />
-    <include file="$(find utl_nav)/launch/utl_key_teleop.launch" />
+    <include file="$(find utl_nav_2nd)/launch/utl_teleop_key.launch" />
 </launch>

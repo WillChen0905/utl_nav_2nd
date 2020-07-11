@@ -2,7 +2,7 @@
 
 <launch>   
     <!-- Map server -->
-    <node name="map_server" pkg="map_server" type="map_server" args="$(find utl_nav_2nd)/map/7fff.yaml"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find utl_nav_2nd)/map/7f.yaml"/>
     
     
     <!-- TF setting -->
